@@ -20,7 +20,7 @@
 :root {
   /* Cores */
 
-  --gb-color: #09090b;
+  --bg-color: #09090b;
   --surface-color: #18181b;
   --stoke-color: #27272a;
   --text-color-primary: #f4f4f5;
@@ -50,7 +50,7 @@
 
   --fs-base: 1rem; /* Paragraph */
 
-  --fs-lg: 1.25rem; /* H3 */
+  --fs-lg: 20px; /* H3 */
 
   --fs-xl: 1.5rem; /* H2 */
 
@@ -80,7 +80,7 @@ html {
 }
 
 body {
-  background-color: var(--gb-color);
+  background-color: var(--bg-color);
 }
 
 h1,
