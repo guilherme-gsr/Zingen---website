@@ -16,11 +16,14 @@
     />
   </head>
   <body>
-    <header >
+
+    <!-- Cabeçalho da Pagina -->
+
+    <header>
       <div class="container py-base">
         <nav class="flex items-center gap-1.5">
           <a href="#">
-            <img src="./assets/icons/logo.svg" alt="Logo Zingen">
+            <img src="./assets/icons/logo.svg" alt="Logo Zingen" />
           </a>
 
           <a href="#about" class="desktop-only">Conheça o app</a>
@@ -32,9 +35,11 @@
       </div>
     </header>
 
-    <div id="hero">
+    <!-- Apresentação da pagina -->
+
+    <section id="hero">
       <div class="container py-xl">
-        <img src="./assets/music-bars.svg" alt="">
+        <img src="./assets/music-bars.svg" alt="" />
         <h1>Quem canta seus males espanta</h1>
         <p>Cantar nunca foi tão fácil</p>
 
@@ -42,8 +47,38 @@
           <a href="#pricing" aria-label="ver planos" class="btn btn-md"></a>
           <a href="download" class="btn btn-md">Baixar agora</a>
         </div>
-
       </div>
-    </div>
+    </section>
+
+    <!-- Apenas o telefone no mobile -->
+
+    <section id="smartphones-img"> 
+      <div class="container">
+        <img src="./assets//smartphones.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Aqui apenas o texto sera usado no mobile, pois a imapgem esta com a tag desktop only -->
+
+    <section id="about">
+      <div class="container even-columns py-xl items-center">
+        <div>
+          <header>
+            <strong>Conheça o app</strong>
+            <h2>O aplicativo perfeito para aprender a cantar</h2>
+          </header>
+           <p>
+              Nosso algoritmo de Inteligência Artificial permite remover a voz
+              original e manter as melodias das músicas. Dessa forma, temos o
+              maior repertório musical para Karaokê! Além disso, ao cantar, sua
+              voz e afinação é comparada pelo algoritmo permitindo uma avaliação
+              precisa da sua performance te ajudando a melhorar seu canto.
+            </p>
+        </div>
+        <div class="desktop-only">
+          <img src="./assets/smartphones.png" alt="">
+        </div>
+      </div>
+    </section>
   </body>
 </html>

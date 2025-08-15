@@ -139,6 +139,11 @@ ul[role="list"] {
   list-style: none;
 }
 
+ img{
+        max-width: 100%;
+        display: inline-block;
+    }
+
 /* @MediaQuery pora caso a width seja 1280px(80em), apenas as fonts-size selecionadas no root serão alteradas*/
 
 @media (width >= 80em) {
