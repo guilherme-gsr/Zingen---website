@@ -66,11 +66,11 @@
 
   /* Padding Horizontal */
 
-  --px-lg: 24px; /* Padding-x = horizontal para mobile*/
+  --px-lg: 1.5rem; /* Padding-x = horizontal para mobile*/
 }
 
 html {
-  font-family: var(--ff-sans);
+  font-family: var(--ff-sans); 
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
 
@@ -143,11 +143,11 @@ ul[role="list"] {
 
 @media (width >= 80em) {
   :root {
-    --fs-lg: 2rem; /* H3 */
+    --fs-lg: 32px; /* H3 */
 
-    --fs-xl: 3rem; /* H2 */
+    --fs-xl: 48px; /* H2 */
 
-    --fs-2xl: 4rem; /* H1 */
+    --fs-2xl: 64px; /* H1 */
 
     --py-base: 1.5rem;
 

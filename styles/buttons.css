@@ -1,96 +1,85 @@
-.btn{
+.btn {
+  /* Variável para o background e a cor do botão */
 
-    /* Variável para o background e a cor do botão */
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--bg-color);
 
-    --btn-bg-color: var( --text-color-primary);
-    --btn-color: var(--bg-color);
+  border: 0;
+  background-color: transparent;
 
-    border: 0;
-    background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content; /*A largura(width) se encaixa conforme o tamanho do conteúdo*/
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;  /*A largura(width) se encaixa conforme o tamanho do conteúdo*/
+  border-radius: 0.5rem;
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
 
-    border-radius: .5rem;
-    font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
+  cursor: pointer;
 
-    cursor: pointer;
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+}
 
+.btn:hover {
+  --btn-bg-color: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
+  color: var(--bg-color);
+
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.btn-sm {
+  font-size: var(--fs-sm);
+  padding: 8px 16px;
+}
+
+.btn-md {
+  font-size: var(--fs-base);
+  padding: 12px 24px;
+}
+
+.btn-lg {
+  font-size: 1.125rem;
+  padding: 16px 32px;
+}
+
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.09375rem;
+    background-color: var(--bg-color);
+  }
+
+  &::after {
+    content: attr(aria-label);
     background: var(--btn-bg-color);
-    color: var(--btn-color);
-
-}
-
-.btn:hover{
-    --btn-bg-color: linear-gradient(90deg, var(--brand-color-secondary)0%, var(--brand-color-primary)100%);
-    --btn-color: var(--surface-color);
-}
-
-.btn-sm{
-    font-size: var(--fs-sm);
-    padding: 8px 16px;
-
-}
-
-.btn-md{
-
-     font-size: var(--fs-base);
-     padding: 0.75rem 1.5rem ;
-
-}
-
-.btn-lg{
-
-     font-size: 1.125rem;
-     padding:  1rem 2rem;
-
-}
-
-.btn[aria-label]{
-
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     position: relative;
-    
-    &::before{
-        content: "";
-        position: absolute;
-        border-radius: inherit;
-        inset: 0.09375rem;
-        background-color: var(--bg-color);
-    }
-
-    &::after{
-        content: attr(aria-label);
-        background: var(--btn-bg-color);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        position: relative;
-        z-index: 1;
-    }
+    z-index: 1;
+  }
 }
-
 
 /* @Media para mudar o tamanho botão(baixar agora) do header no desktop */
 
+@media (width >= 80em) {
+  .btn-sm {
+    font-size: var(--fs-base);
+    padding: 0.75rem 1.5rem;
+  }
 
-@media (width >= 80em){
-
-
-.btn-sm{
-
-     font-size: var(--fs-base);
-     padding: 0.75rem 1.5rem ;
-
+  .btn-md {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
 }
-
-.btn-md{
-
-     font-size: 1.125rem;
-     padding:  1rem 2rem;
-
-}
-
-
-}  
