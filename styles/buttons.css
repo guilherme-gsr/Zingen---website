@@ -2,7 +2,7 @@
 
     /* Variável para o background e a cor do botão */
 
-    --btn-bg-color: var(--text-color-primary);
+    --btn-bg-color: var( --text-color-primary);
     --btn-color: var(--bg-color);
 
     border: 0;
@@ -30,7 +30,7 @@
 
 .btn-sm{
     font-size: var(--fs-sm);
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
 
 }
 
@@ -70,3 +70,27 @@
         z-index: 1;
     }
 }
+
+
+/* @Media para mudar o tamanho botão(baixar agora) do header no desktop */
+
+
+@media (width >= 80em){
+
+
+.btn-sm{
+
+     font-size: var(--fs-base);
+     padding: 0.75rem 1.5rem ;
+
+}
+
+.btn-md{
+
+     font-size: 1.125rem;
+     padding:  1rem 2rem;
+
+}
+
+
+}  
