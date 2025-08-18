@@ -28,6 +28,8 @@ section{
         
 }
 
+/* deixa essa imagem visivel apenas no mobile */
+
 @media (width >= 80em){
     #smartphones-img{
         display: none;
