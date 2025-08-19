@@ -79,6 +79,8 @@ html {
   color: var(--text-color-primary);
 
    overflow-x: hidden;
+
+   scroll-behavior: smooth;  /* Ao clicar em área de navegação essa opção faz um transição suave */
 }
 
 body {

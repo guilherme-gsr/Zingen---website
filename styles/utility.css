@@ -50,7 +50,7 @@
 }
 
 .grid{
-    display: grid;
+    display: grid;  /*Em mobile, um abaixo do outro*/
 }
 
 @media (width >= 80em){
