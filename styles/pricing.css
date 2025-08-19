@@ -55,11 +55,14 @@
     color: var(--text-color-secondary);
   }
 
+  /*  Card do meio com border gradient */
+
   & .premium {
     position: relative;
 
     & .card {
       padding-top: 4.25rem;
+      
       & span {
         position: absolute;
         top: 0;
@@ -82,7 +85,10 @@
       }
     }
 
-    padding: 2px;
+    /* Criando o background no premium para fazer a borda gradient */
+
+    /* Este before deve ser absolute em relação ao premium que é relativo */
+
     &::before {
       content: "";
       background: linear-gradient(
@@ -91,10 +97,13 @@
         var(--brand-color-primary) 100%
       );
       position: absolute;
-      inset: 0;
+      inset: 0;  /* Faz cobrir toda a area do card*/
       border-radius: 1.5rem;
-      z-index: -1;
+      z-index: -1; /* Coloca uma camada abaixo do card */
     }
+
+    /* Coloque um padding no premium para que o ::before fique fisivel e de o efeito de borda */
+      padding: 2px;
   }
 
   @media (width >= 80rem) {

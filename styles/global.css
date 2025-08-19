@@ -77,6 +77,8 @@ html {
   line-height: 1.6; /* No figma esse line-height esta como 160%*/
 
   color: var(--text-color-primary);
+
+   overflow-x: hidden;
 }
 
 body {
